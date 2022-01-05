@@ -1,0 +1,39 @@
+header {
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.con-txt {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+
+.festival {
+    margin: 0 auto;
+    width: 800px;
+}
+
+
+.notice {
+    margin: 0 auto;
+    width: 800px;
+}
+.notice h3 {
+    margin-top: 50px;
+}
+
+.notice .last {
+    margin-bottom: 50px;
+}
+

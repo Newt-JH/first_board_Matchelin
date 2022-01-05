@@ -1,0 +1,152 @@
+/* slider */
+.slick-list {
+    height: 500px;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.main_card {
+    margin: 100px auto;
+    width: 1200px;
+}
+
+.main_card h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main_card .middle_card {
+    display: flex;
+}
+
+.main_card img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.middle_card {
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.middle_card div {
+    padding: 20px;
+}
+
+.middle_card p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.main_mid_banner{
+    background-image: url("../img/spaghetti-g0b64e49b4_1920.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.main_mid_banner .mid_banner_txt {
+    position: absolute;
+    width: 800px;
+    top: 200px;
+    left: 20%;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.mid_banner_txt_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main_mid_banner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+  }
+
+.main_gallery h3 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+        font-size: 28px;
+    font-weight: 700;
+}
+
+.gallery_box {
+    width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.gallery_box .image{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.gallery_box .image:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 330px;
+    height: 330px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+}
+
+
+
+.logo2 {
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    transform:rotate(10deg)
+}
+
+
+/* animation */
+
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    35% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+}
+
+
+.card_img img:hover {
+    box-shadow: 0px 0px 15px rgb(46, 46, 46);
+    animation: heartbeat 1s;
+}

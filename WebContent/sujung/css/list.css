@@ -1,0 +1,97 @@
+header {
+    border-bottom: 1px solid #cecece;
+}
+
+.list_card {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.card_1 {
+    display: flex;
+    margin-bottom: 50px;
+    border: 1px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.card_1:first-child {
+    margin-top: 50px;
+}
+
+.card_1 .list_txt {
+    padding: 20px;
+}
+
+.card_1 .list_txt p {
+    position: absolute;
+    bottom: 2px;
+    left: 350px;
+}
+
+.card_1 .list_txt div {
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 100px;
+    height:100px;
+}
+
+.card_1 .list_txt i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: red;
+}
+
+.card_1 .list_txt i:hover {
+    font-weight: 600;
+    animation: jello-horizontal 1s;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.card_1 .images {
+    height: 350px;
+}
+
+.card_1 img {
+    width: 350px;
+    height: 350px;
+}
+
+.card_1 .images a:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s linear;
+}
+
+/* animation */
+@keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }

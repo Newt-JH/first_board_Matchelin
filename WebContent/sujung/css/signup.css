@@ -1,0 +1,40 @@
+header {
+    border-bottom: 1px solid #cecece;
+}
+
+.signup_box {
+    box-sizing: border-box;
+    width: 451px;
+    margin: 0 auto;
+}
+
+.signup_box  h3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.signup_box form input {
+    width: 450px;
+    height: 70px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+.signup_box form input[type=submit] {
+    border: none;
+}
+
+.sub {
+    width: 458px !important;
+    margin-bottom: 200px !important;
+    background-color: #ff9;
+    border-color: #ff9;
+    
+}
+
+.sub:hover {
+    box-shadow: 3px 3px 3px #1e1e1e;
+    cursor: pointer;
+}
